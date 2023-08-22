@@ -1,0 +1,229 @@
+//header
+header {
+    width: 100%;
+    height: auto;
+
+    //上部
+    .top {
+        width: 100%;
+        height: auto;
+        background: $headerBg_1;
+
+        .center {
+            width: 1400px;
+            min-width: 1813px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 0 auto;
+
+            // 語言
+            .language {
+                width: auto;
+                height: auto;
+                position: relative;
+
+                select {
+                    width: 172px;
+                    height: 39px;
+                    background: $languageBg_1;
+                    font-size: 17px;
+                    letter-spacing: 2px;
+                    font-weight: bold;
+                    color: $selectTxt_1;
+                    padding-left: 35px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: $languageHr_1;
+                    }
+
+                    option {
+                        background: $optionBg_1;
+                        color: $optionTxt_1;
+                    }
+                }
+                i {
+                    width: 10px;
+                    height: 10px;
+                    border-width: 0 2px 2px 0;
+                    border-style: solid;
+                    border-color: transparent $selectTxt_1 $selectTxt_1 transparent;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%)rotate(45deg);
+                    right: 42px;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+    //下部
+    .bottom {
+        width: 100%;
+        height: auto;
+
+        .center {
+            width: 100%;
+            max-width: 1920px;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 auto;
+
+            //swiper
+            .swiper {
+
+                .swiper-wrapper {
+
+                    .swiper-slide {
+                        width: 1400px;
+                        height: 505px;
+                        position: relative;
+                    }
+                }
+                .swiper-pagination {
+                    display: none;
+                    flex-direction: column;
+                    align-items: center;
+                    top: 200px;
+                    left: 655px;
+                    
+                    .swiper-pagination-bullet {
+                        width: 12px;
+                        height: 12px;
+                        // background: $swiperBullet_2;
+                        opacity: 1;
+                        margin: 0 15px;
+                    }
+                    .swiper-pagination-bullet-active {
+                        width: 14px;
+                        height: 14px;
+                        // background: $swiperBullet_1;
+                        margin: 0 15px;
+                    }
+                }
+            }
+            .loginGroup {
+                width: 520px;
+                height: 540px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 40px;
+
+                .loginTop {
+                    width: 520px;
+                    height: 223px;
+                }
+                .logo {
+                    width: 497px;
+                    height: 175px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+                .login1 {
+                    width: 217px;
+                    height: 42px;
+                    margin-bottom: 20px;
+
+                    label {
+                        position: relative;
+
+                        input {
+                            width: 176px;
+                            height: 28px;
+                            position: absolute;
+                            top: 6px;
+                            right: 4px;
+                            padding-left: 10px;
+                            
+                            &::placeholder {
+                                color: $placeholder_1;
+                                font-size: 14px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+                .login2 {
+                    width: 217px;
+                    height: 42px;
+
+                    label {
+                        position: relative;
+
+                        input {
+                            width: 176px;
+                            height: 28px;
+                            position: absolute;
+                            top: 6px;
+                            right: 4px;
+                            padding-left: 10px;
+
+                            &::placeholder {
+                                color: $placeholder_1;
+                                font-size: 14px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+                .buttonGroup {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+
+                    .login {
+                        width: 104px;
+                        height: 47px;
+                        margin-right: 5px;
+                        font-size: 18px;
+                        font-weight: bold;
+                        background: $loginBtn_1;
+                        box-shadow: 1px 1px 8px 2px $loginShadow_1 inset;
+
+                        &:hover,&:active,&.active {
+                            background: $loginBtn_2;
+                            color: $forgetTxt_1;
+                        }
+                    }
+
+                    .registe {
+                        width: 104px;
+                        height: 47px;
+                        margin-left: 5px;
+                        font-size: 18px;
+                        font-weight: bold;
+                        background: $loginBtn_2;
+                        color: $loginTxt_1;
+                        box-shadow: 1px 1px 8px 2px $loginShadow_2 inset;
+                        
+                        &:hover,&:active,&.active {
+                            background: $loginBtn_1;
+                        }
+                    }
+                }
+                .forget {
+                    width: 215px;
+                    height: 33px;
+                    margin-top: 20px;
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: $forgetTxt_1;
+                    background: $forgetBtn_1;
+
+                    &:hover,&:active,&.active {
+                        background: $forgetBtn_2;
+                    }
+                }
+            }
+        }
+    }
+}

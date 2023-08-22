@@ -1,0 +1,233 @@
+//背景
+.home {
+    background: url("../img/bg.png") no-repeat ;
+    background-size: 100%;
+}
+
+//login
+header .bottom .center .loginGroup {
+    background: url("../img/loginBg2.png") no-repeat center;
+    background-size: contain;
+}
+header .bottom .center .loginGroup .loginTop{
+    background: url("../img/loginBg1.png") no-repeat center;
+    background-size: contain;
+}
+header .bottom .center .loginGroup .logo{
+    background: url("../img/logo.png") no-repeat center;
+    background-size: contain;
+}
+header .bottom .center .loginGroup .login1{
+    background: url("../img/login1.png") no-repeat center;
+    background-size: contain;
+}
+header .bottom .center .loginGroup .login2{
+    background: url("../img/login2.png") no-repeat center;
+    background-size: contain;
+}
+// 裝飾
+.home .topDecorate {
+    background: url("../img/bgDecorate1.png") no-repeat center;
+    background-size: contain;
+}
+// 裝飾
+.home .bottomDecorate {
+    background: url("../img/bgDecorate2.png") no-repeat center;
+    background-size: contain;
+}
+//遊戲背景
+.home .gameGroup .gamebox li {
+    background: url("../img/game/gameBg.png") no-repeat center;
+    background-size: contain;
+}
+//遊戲背景 hover
+.home .gameGroup .gamebox li::after {
+    background: url("../img/game/gameHr.png") no-repeat center;
+    background-size: contain;
+    
+}
+.home .dartsGroup .darts1 {
+    background: url("../img/darts1.png") no-repeat center;
+    background-size: contain;
+}
+.home .dartsGroup .darts2 {
+    background: url("../img/darts2.png") no-repeat center;
+    background-size: contain;
+}
+.home .dartsGroup .darts3 {
+    background: url("../img/darts3.png") no-repeat center;
+    background-size: contain;
+}
+.home .dartsGroup .darts4 {
+    background: url("../img/darts4.png") no-repeat center;
+    background-size: contain;
+}
+.home .dartsGroup .darts5 {
+    background: url("../img/darts5.png") no-repeat center;
+    background-size: contain;
+}
+.home .dartsGroup .darts6 {
+    background: url("../img/darts6.png") no-repeat center;
+    background-size: contain;
+}
+.home .dartsGroup .darts7 {
+    background: url("../img/darts7.png") no-repeat center;
+    background-size: contain;
+}
+
+footer .partnerGroup {
+    background: url("../img/footerBg.png") no-repeat center;
+    background-size: contain;
+}
+// partner
+footer .box .NE {
+    background: url("../img/sponsor/NE.png") no-repeat center;
+}
+footer .box .JILI {
+    background: url("../img/sponsor/JILI.png") no-repeat center;
+}
+footer .box .SP {
+    background: url("../img/sponsor/SP.png") no-repeat center;
+}
+footer .box .OG {
+    background: url("../img/sponsor/OG.png") no-repeat center;
+}
+footer .box .QS {
+    background: url("../img/sponsor/QS.png") no-repeat center;
+}
+footer .box .AV {
+    background: url("../img/sponsor/AV.png") no-repeat center;
+}
+footer .box .TPG {
+    background: url("../img/sponsor/TPG.png") no-repeat center;
+}
+footer .box .PS {
+    background: url("../img/sponsor/PS.png") no-repeat center;
+}
+footer .box .YG {
+    background: url("../img/sponsor/YG.png") no-repeat center;
+}
+footer .box .SA {
+    background: url("../img/sponsor/SA.png") no-repeat center;
+}
+footer .box .ELK {
+    background: url("../img/sponsor/ELK.png") no-repeat center;
+}
+footer .box .BP {
+    background: url("../img/sponsor/BP.png") no-repeat center;
+}
+footer .box .EVO {
+    background: url("../img/sponsor/EVO.png") no-repeat center;
+}
+footer .box .RSG {
+    background: url("../img/sponsor/RSG.png") no-repeat center;
+}
+footer .box .AG {
+    background: url("../img/sponsor/AG.png") no-repeat center;
+}
+footer .box .TP {
+    background: url("../img/sponsor/TP.png") no-repeat center;
+}
+footer .box .AB {
+    background: url("../img/sponsor/AB.png") no-repeat center;
+}
+footer .box .RE {
+    background: url("../img/sponsor/RE.png") no-repeat center;
+}
+footer .box .PG {
+    background: url("../img/sponsor/PG.png") no-repeat center;
+}
+footer .box .PNG {
+    background: url("../img/sponsor/PNG.png") no-repeat center;
+}
+footer .box .MG {
+    background: url("../img/sponsor/MG.png") no-repeat center;
+}
+footer .box .PP {
+    background: url("../img/sponsor/PP.png") no-repeat center;
+}
+footer .box .RR {
+    background: url("../img/sponsor/RR.png") no-repeat center;
+}
+footer .box .GH {
+    background: url("../img/sponsor/GH.png") no-repeat center;
+}
+footer .box .RT {
+    background: url("../img/sponsor/RT.png") no-repeat center;
+}
+footer .box .BNG {
+    background: url("../img/sponsor/BNG.png") no-repeat center;
+}
+footer .box .sport {
+    background: url("../img/sponsor/sport.png") no-repeat center;
+}
+
+footer .footerList .center ul li .title i {
+    background: url("../img/footerI.png");
+    background-size: contain;
+}
+footer .footerList .center ul li button .fb {
+    background: url("../img/fb.png") no-repeat center;
+    background-size: contain;
+}
+footer .footerList .center ul li button .ig {
+    background: url("../img/ig.png") no-repeat center;
+    background-size: contain;
+}
+footer .footerList .center ul li button .tw {
+    background: url("../img/tw.png") no-repeat center;
+    background-size: contain;
+}
+
+// 裝飾
+footer .decorate {
+    background: url("../img/bgDecorate3.png") no-repeat center;
+    background-size: contain;
+}
+
+//手機下載
+body aside .download .txt i {
+    background: url("../img/downloadIc.png") no-repeat center;
+    background-size: contain;
+} 
+body aside .download .br{
+    background: url("../img/asideBr.png") no-repeat center;
+    background-size: contain;
+} 
+//service
+body aside .service .br {
+    background: url("../img/asideBr2.png") no-repeat;
+    background-size: contain;
+} 
+body aside .service li .phone {
+    background: url("../img/phoneIc.png") no-repeat;
+    background-size: contain;
+} 
+
+//回到頂部
+body aside .backTop .icon {
+    background: url("../img/backTopIc.png") no-repeat center;
+    background-size: contain;
+}
+body aside .backTop:hover .icon {
+    background: url("../img/backTopIcHover.png") no-repeat center;
+    background-size: contain;
+}
+//logo
+header .bottom .center .logo {
+    background: url("../img/logo.png") no-repeat center;
+    background-size: contain;
+}
+
+//marquee icon
+.home .marqueeGroup i {
+    background: url("../img/marqueeIc.png") no-repeat center;
+    background-size: contain;
+}
+//marquee Bg
+.home .marqueeGroup {
+    background: url("../img/marqueeBg.png") no-repeat center;
+    background-size: contain;
+}
+
+

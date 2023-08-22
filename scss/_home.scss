@@ -1,0 +1,577 @@
+.home {
+    width: auto;
+    max-width: 1920px;
+    min-height: 1133px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+    overflow: hidden;
+
+    // 裝飾
+    .topDecorate {
+        width: 565px;
+        height: 433px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        
+        &.action {
+            animation: topDecorate 3s linear infinite;
+            animation-fill-mode: forwards;
+            @keyframes topDecorate {
+
+                0% {
+                    transform: translateX(-100%);
+                }
+                10% {
+                    transform: translateX(0%);
+                }
+                20% {
+                    transform: translateX(-2%);
+                }
+                40% {
+                    transform: translateX(0%);
+                }
+                50% {
+                    transform: translateX(0%);
+                }
+                60% {
+                    transform: translateX(-2%);
+                }
+                80% {
+                    transform: translateX(0%);
+                }
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+        }
+    }
+
+    .navGroup {
+        width: 1400px;
+        height: auto;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 auto;
+
+        ul {
+            width: 100%;
+            height: 96px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            li {
+                width: auto;
+                height: 100%;
+                // background: #949494;
+                padding: 0 32px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                position: relative;
+                z-index: 2;
+
+                a {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #ffffff;
+                }
+
+                &:hover,&:active,&.active {
+
+                    &::before {
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        background: $navHover_1;
+                        transform: skew(-50deg);
+                        position: absolute;
+                        border-radius: 4px;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                    }
+                    &::after {
+                        content: "";
+                        width: 104%;
+                        height: 101%;
+                        background: $border_1;
+                        transform: skew(-50deg);
+                        position: absolute;
+                        border-radius: 4px;
+                        top: 0;
+                        left: -3px;
+                        z-index: -2;
+                    }
+                }
+            }
+        }
+    }
+
+    // 遊戲選單
+    .gameGroup {
+        width: 100%;
+        min-width: 1400px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+
+        .gamebox {
+            width: 1400px;
+            height: auto;
+            display: flex;
+            justify-content: flex-start;
+            
+            &:first-child {
+                justify-content: flex-end;
+                margin: 90px 0 50px;
+            }
+            
+            li {
+                width: 313px;
+                height: 313px;
+                margin-left: 100px;
+                position: relative;
+                cursor: pointer;
+                z-index: 1;
+
+                &::after {
+                    content: "";
+                    width: 313px;
+                    height: 313px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: none;
+                    z-index: -1;
+                }
+
+                &:hover,&:active,&.active {
+                    transform: scale(1.2);
+                    transform: 5s;
+
+                    &::after {
+                        display: block;
+                    }
+                    .gameBg {
+                        .gamePic {
+                            img {
+                                &.sport {
+                                    animation: sport 0.5s linear;
+                                    transform-origin: bottom;
+
+                                    @keyframes  sport{
+                                        0% {
+                                            transform: scale(1)rotate(0deg) translateY(0%);
+                                        }
+                                        75% {
+                                            transform: scale(1.05)rotate(-20deg) translateY(10%);
+                                        }
+                                        85% {
+                                            transform: scale(1.05)rotate(2deg) translateY(2%);
+                                        }
+                                        100% {
+                                            transform: scale(1)rotate(0deg) translateY(0%);
+                                        }
+                                    }
+                                }
+                                &.live {
+                                    animation: live 1s linear;
+                                    transform-origin: bottom;
+    
+                                    @keyframes live{
+                                        0% {
+                                            transform: translateX(0%) rotate(0deg);
+                                        }
+                                        25% {
+                                            transform: translateX(-60%) rotate(-1deg) scaleX(-1);
+                                        }
+                                        65% {
+                                            transform: translateX(-20%) rotate(2deg);
+                                        }
+                                        85% {
+                                            transform: translateX(10%) rotate(-2deg);
+                                        }
+                                        100% {
+                                            transform: translateX(0%) rotate(0deg);
+                                        }
+                                    }
+                                }
+                                &.slot {
+                                    animation: slot 0.5s linear;
+                                    transform-origin: bottom;
+    
+                                    @keyframes slot{
+                                        0% {
+                                            transform: translateX(0%) rotate(0deg);
+                                        }
+                                        55% {
+                                            transform: translateX(-1%) rotate(-2deg);
+                                        }
+                                        75% {
+                                            transform: translateX(5%) rotate(2deg);
+                                        }
+                                        100% {
+                                            transform: translateX(0%) rotate(0deg);
+                                        }
+                                    }
+                                }
+                                &.ticket {
+                                    animation: ticket 0.5s linear;
+                                    transform-origin: bottom;
+    
+                                    @keyframes ticket {
+                                        0% {
+                                            transform: scaleX(0)scaleY(0);
+                                        }
+                                        65% {
+                                            transform: scaleX(1.05)scaleY(0.95);
+                                        }
+                                        75% {
+                                            transform: scaleX(0.9)scaleY(1.1);
+                                        }
+                                        85% {
+                                            transform: scaleX(1.05)scaleY(0.98);
+                                        }
+                                        100% {
+                                            transform: scaleX(1)scaleY(1);
+                                        }
+                                    }
+                                }
+                                &.fish {
+                                    animation: fish 0.5s linear;
+                                    transform-origin: bottom;
+    
+                                    @keyframes fish {
+                                        0% {
+                                            transform: scaleX(1)scaleY(1);
+                                        }
+                                        55% {
+                                            transform: scaleX(1.02)scaleY(1.1);
+                                        }
+                                        75% {
+                                            transform: scaleX(1.1)scaleY(1.02);
+                                        }
+                                        85% {
+                                            transform: scaleX(1.02)scaleY(1.1);
+                                        }
+                                        100% {
+                                            transform: scaleX(1)scaleY(1);
+                                        }
+                                    }
+                                }
+                                &.board {
+                                    animation: board 0.5s linear;
+    
+                                    @keyframes board {
+                                        0% {
+                                            transform: translateX(-50%) scaleX(1)scaleY(1);
+                                        }
+                                        65% {
+                                            transform: translateX(-50%) scaleX(1.2)scaleY(0.85);
+                                        }
+                                        75% {
+                                            transform: translateX(-50%) scaleX(0.95)scaleY(1.05);
+                                        }
+                                        85% {
+                                            transform: translateX(-50%) scaleX(1.02)scaleY(0.98);
+                                        }
+                                        100% {
+                                            transform: translateX(-50%) scaleX(1)scaleY(1);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:first-child {
+                    margin: 0;
+                }
+
+                .gameBg {
+                    width: 258px;
+                    height: 258px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50% ,-50%);
+                    overflow: hidden;
+
+                    .gamePic {
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+    
+                        img {
+                            width: auto;
+                            height: auto;
+    
+                            &.sport {
+                                position: absolute;
+                                bottom: 0px;
+                                left: -24px;
+                            }
+    
+                            &.live {
+                                position: absolute;
+                                bottom: -5px;
+                                right: 10px;
+                            }
+    
+                            &.slot {
+                                position: absolute;
+                                bottom: -10px;
+                                right: 0;
+                            }
+    
+                            &.ticket {
+                                position: absolute;
+                                bottom: -14px;
+                                right: -47px;
+                            }
+    
+                            &.fish {
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                            }
+    
+                            &.board {
+                                position: absolute;
+                                bottom: -20px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+                        }
+                    }
+                    .gameTxt {
+                        font-size: 18px;
+                        color: #ffffff;
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    //marquee
+    .marqueeGroup {
+        width: 1400px;
+        height: 47px;
+        display: flex;
+        justify-content: flex-end;
+        @include marquee;
+        z-index: 2;
+    }
+    // 裝飾
+    .bottomDecorate {
+        width: 565px;
+        height: 433px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 99;
+        
+        &.action {
+            animation: bottomDecorate 3s linear infinite;
+            animation-fill-mode: forwards;
+            @keyframes bottomDecorate {
+
+                0% {
+                    transform: translateX(100%);
+                }
+                10% {
+                    transform: translateX(0%);
+                }
+                40% {
+                    transform: translateX(2%);
+                }
+                50% {
+                    transform: translateX(0%);
+                }
+                60% {
+                    transform: translateX(0%);
+                }
+                70% {
+                    transform: translateX(2%);
+                }
+                80% {
+                    transform: translateX(0%);
+                }
+                100% {
+                    transform: translateX(100%);
+                }
+            }
+        }
+    }
+    .dartsGroup {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+
+        .darts1 {
+            width: 321px;
+            height: 178px;
+            position: absolute;
+            top: 226px;
+            left: 141px;
+            
+            &.action {
+                animation: darts1 0.5s linear ;
+                animation-fill-mode: both;
+            }
+            @keyframes darts1 {
+
+                0% {
+                    transform: translateX(1000%)translateY(-100%)rotate(180deg);
+                }
+                100% {
+                    transform: translate(0%)translateY(0%);;
+                }
+            }
+        }
+        .darts2 {
+            width: 316px;
+            height: 207px;
+            position: absolute;
+            top: 200px;
+            right: -210px;
+
+            &.action {
+                animation: darts2 0.5s linear 1s;
+                animation-fill-mode: backwards;
+            }
+
+            @keyframes darts2 {
+
+                0% {
+                    transform: translateX(-1000%)translateY(-100%)rotate(180deg);
+                }
+                100% {
+                    transform: translate(0%)translateY(0%);;
+                }
+            }
+        }
+        .darts3 {
+            width: 301px;
+            height: 321px;
+            position: absolute;
+            top: 420px;
+            right: 800px;
+            z-index: -1;
+
+            &.action {
+                animation: darts3 0.5s linear 1s;
+                animation-fill-mode: backwards;
+            }
+            @keyframes darts3 {
+
+                0% {
+                    transform: translateX(-1000%)translateY(-100%)rotate(180deg);
+                }
+                100% {
+                    transform: translate(0%)translateY(0%);;
+                }
+            }
+        }
+        .darts4 {
+            width: 319px;
+            height: 287px;
+            position: absolute;
+            top: 800px;
+            left: -70px;
+
+            &.action {
+                animation: darts4 2s linear 1.7s ;
+                animation-fill-mode: backwards;
+            }
+            @keyframes darts4 {
+
+                0% {
+                    transform: translateY(-1000%) translateX(2000%)rotate(180deg);
+                }
+                20% {
+                    transform: rotate(180deg);
+                }
+                30% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+        .darts5 {
+            width: 405px;
+            height: 87px;
+            position: absolute;
+            top: 980px;
+            left: 800px;
+
+            &.action {
+                animation: darts5 0.5s linear 0.5s;
+                animation-fill-mode: backwards;
+            }
+
+            @keyframes darts5 {
+
+                0% {
+                    transform: scale(0);
+                }
+                20% {
+                    transform: scale(1.1)rotateY(180deg);
+                }
+                40% {
+                    transform: scale(1);
+                }
+                100% {
+                    transform: scale(1)rotateZ(0deg);
+                }
+            }
+        }
+        .darts6 {
+            width: 352px;
+            height: 404px;
+            position: absolute;
+            bottom: 25px;
+            right: 140px;
+
+            &.action {
+                animation: darts6 1s linear 1.2s;
+                animation-fill-mode: backwards;
+            }
+
+            @keyframes darts6 {
+
+                0% {
+                    transform: translateX(-1000%)rotate(-180deg);
+                }
+                50% {
+                    transform: translateX(0%)rotate(0deg);
+                }
+                80% {
+                    transform: translateX(0%);
+                }
+                100% {
+                    transform: translateX(0%);
+                }
+            }
+        }
+    }
+}
